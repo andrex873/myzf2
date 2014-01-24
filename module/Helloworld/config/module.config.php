@@ -24,5 +24,10 @@ return array(
         'invokables' => array(
             'Helloworld\Controller\Index' => 'Helloworld\Controller\IndexController'
         )
+    ),
+    'service_manager' => array(
+        'invokables' => array(
+            'LoginService' => 'Helloworld\Service\LoginService'
+        )
     )
 );

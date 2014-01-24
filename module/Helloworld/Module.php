@@ -2,7 +2,7 @@
 
 namespace Helloworld;
 
-class Module {
+class Module implements AutoloaderProviderInterface, ConfigProviderInterface{
 
     public function getAutoloaderConfig() {
         return array(
