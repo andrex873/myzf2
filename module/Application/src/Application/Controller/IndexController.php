@@ -16,6 +16,9 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $loginService = $this->getServiceLocator()->get('LoginService');
+
+        $viewModel = array('otro' => $loginService->getMetodo());
+        return new ViewModel($viewModel);
     }
 }

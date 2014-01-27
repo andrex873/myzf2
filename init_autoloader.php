@@ -47,3 +47,9 @@ if ($zf2Path) {
 if (!class_exists('Zend\Loader\AutoloaderFactory')) {
     throw new RuntimeException('Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.');
 }
+/**
+ * Cargar funciones personalizadas.
+ */
+if (file_exists('vendor/Utils/Funciones.php')) {
+    $funciones = include 'vendor/Utils/Funciones.php';
+}
